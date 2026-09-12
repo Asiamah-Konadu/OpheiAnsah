@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Shipping from Japan to Tema Port & Live Tracking | Ophei Ansah Auto Imports</title>
+  <meta name="description" content="Direct RoRo and 40ft High Cube container shipping from Yokohama, Nagoya, and Busan to Tema Port, Ghana. Live ocean container and VIN tracking simulator. WhatsApp: 0245663155.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Ghana Flag Accent Stripe -->
+  <div class="ghana-stripe"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Direct Japan & Korea Vehicle Imports | Tema Port Clearing & Accra Showroom
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="currency-badge">💱 Reference Rate: $1 ≈ GH₵ 15.50</span>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20have%20an%20inquiry%20regarding%20vehicle%20shipping%20to%20Ghana." target="_blank" class="hotline-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Hotline: 024 566 3155
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.php" class="brand-logo" title="Ophei Ansah Auto Imports">
+          <img src="logo.png" alt="Ophei Ansah Auto Imports Logo">
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.php" class="nav-link">Home</a></li>
+          <li><a href="buy-cars.php" class="nav-link">Buy Cars</a></li>
+          <li><a href="duty-estimator.php" class="nav-link">Duty Estimator</a></li>
+          <li><a href="shipping.php" class="nav-link active">Shipping & Track</a></li>
+          <li><a href="rental.php" class="nav-link">Car Rental</a></li>
+          <li><a href="spare-parts.php" class="nav-link">Spare Parts</a></li>
+          <li><a href="contact.php" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="duty-estimator.php" class="btn-duty-calc-nav">
+            <span>🧮</span> GRA Duty Calc
+          </a>
+          <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20want%20to%20track%20my%20shipment%20or%20inquire%20about%20freight." target="_blank" class="btn-whatsapp-sm">
+            <span>💬</span> 0245663155
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container page-banner-inner">
+      <span class="badge-pill">Ocean Freight & Tema Logistics</span>
+      <h1>Direct Shipping from Japan & Korea to Tema Port</h1>
+      <p>
+        Reliable RoRo (Roll-on/Roll-off) and dedicated or consolidated 40ft High Cube container shipping from Yokohama, Kobe, Nagoya, and Busan directly to Ghana with live cargo tracking.
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.php">Home</a>
+        <span>/</span>
+        <span style="color: #FFFFFF;">Shipping & Track</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: SHIPPING SERVICES & CONTAINER TRACKING -->
+  <section class="shipping-section" id="shipping" style="padding-top: 3.5rem;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Ocean Logistics Methods</span>
+        <h2 class="section-title">RoRo vs Container Shipping to Ghana</h2>
+        <p class="section-desc">
+          We offer flexible, cost-effective ocean freight tailored to whether you are importing single vehicles or combining vehicles with heavy spare parts.
+        </p>
+      </div>
+
+      <div class="shipping-cards-grid">
+        <div class="shipping-card">
+          <div class="shipping-card-header">
+            <div class="shipping-card-icon">🚢</div>
+            <div>
+              <h3>RoRo (Roll-on / Roll-off) Shipping</h3>
+              <span style="color: var(--gold-light); font-size: 0.85rem;">Fastest & Most Economical</span>
+            </div>
+          </div>
+          <p style="color: #CBD5E1; font-size: 0.95rem;">
+            Ideal for running, single vehicles. Cars are securely driven onto specialized automotive ocean carriers at Japanese ports and discharged directly at Tema Port.
+          </p>
+          <ul class="shipping-features-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Yokohama & Nagoya departures twice monthly</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Average ocean transit: 35 - 45 days</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> JEVIC / JAAI Japanese radiation test certificate</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Lowest ocean freight rates to West Africa</li>
+          </ul>
+        </div>
+
+        <div class="shipping-card">
+          <div class="shipping-card-header">
+            <div class="shipping-card-icon">📦</div>
+            <div>
+              <h3>Containerized Shipping (40ft HC)</h3>
+              <span style="color: var(--gold-light); font-size: 0.85rem;">Maximum Security & Auto Parts</span>
+            </div>
+          </div>
+          <p style="color: #CBD5E1; font-size: 0.95rem;">
+            Best for combining imported cars with spare parts, engines, half-cuts, or shipping multiple vehicles together with complete anti-theft protection.
+          </p>
+          <ul class="shipping-features-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Fits 3 to 4 vehicles or 2 vehicles + full spare parts cargo</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Sealed with high-security bolt seals at Japan port</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Direct discharge to MPS Terminal 3 or Golden Jubilee</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Complete protection against harsh salt air and handling</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Live Container & Vehicle Tracking Simulator -->
+      <div class="tracking-box-container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-pill" style="background: rgba(217, 119, 6, 0.2); color: var(--gold-light); border-color: var(--gold-accent);">Live Shipment Status</span>
+          <h3 style="font-size: 1.8rem; color: #FFFFFF;">Track Your Vehicle or Container En Route to Ghana</h3>
+          <p style="color: #CBD5E1; font-size: 0.95rem;">Enter your Ophei Ansah Bill of Lading, Container number, or Chassis/VIN below:</p>
+        </div>
+
+        <div class="tracking-input-wrap">
+          <input type="text" id="trackingInput" class="tracking-input" placeholder="e.g. OA-7829-GH, OA-4412-JP, or VIN..." value="OA-7829-GH">
+          <button type="button" class="btn-track" id="btnTrackSubmit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            Track Shipment
+          </button>
+        </div>
+
+        <!-- Sample Track Codes -->
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #94A3B8;">
+          Try active sample shipments:
+          <a href="javascript:void(0)" onclick="setSampleTrack('OA-7829-GH')" style="color: var(--gold-light); text-decoration: underline; margin: 0 0.4rem;">OA-7829-GH (RAV4 at Sea)</a> |
+          <a href="javascript:void(0)" onclick="setSampleTrack('OA-4412-JP')" style="color: var(--gold-light); text-decoration: underline; margin: 0 0.4rem;">OA-4412-JP (Corolla at Tema)</a> |
+          <a href="javascript:void(0)" onclick="setSampleTrack('OA-9103-KR')" style="color: var(--gold-light); text-decoration: underline; margin: 0 0.4rem;">OA-9103-KR (Elantra from Busan)</a>
+        </div>
+
+        <!-- Tracking Result Card -->
+        <div class="tracking-result" id="trackingResultBox" style="display: none;">
+          <!-- Dynamically populated by main.js -->
+        </div>
+      </div>
+
+      <!-- Tema Port Clearing Workflow -->
+      <div style="margin-top: 4rem; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+        <div style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">
+          <span class="section-pill">Customs Release</span>
+          <h3 style="font-size: 1.6rem; color: var(--navy-deep); margin-bottom: 0.5rem;">Our 5-Day Tema Port Clearing Process</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">
+            Why pay exorbitant demurrage and storage fees? Our dedicated wharf staff at Tema Port expedites every step:
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 1.2rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 0.3rem;">Day 1: Manifest</div>
+            <strong style="color: var(--gold-dark); font-size: 0.9rem;">ICUMS Manifest Matching</strong>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">Electronic Bill of Lading linked to shipping line manifest before vessel docks.</p>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 1.2rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 0.3rem;">Day 2: Assessment</div>
+            <strong style="color: var(--gold-dark); font-size: 0.9rem;">CCVR Generation</strong>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">Customs Valuation Report produced and validated against GRA database.</p>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 1.2rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 0.3rem;">Day 3: Duty Payment</div>
+            <strong style="color: var(--gold-dark); font-size: 0.9rem;">GRA Bank Settlement</strong>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">Statutory duty, VAT, and levies paid directly to GRA partner banks.</p>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 1.2rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 0.3rem;">Day 4: Physical Exam</div>
+            <strong style="color: var(--gold-dark); font-size: 0.9rem;">Joint Agency Inspection</strong>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">Customs, National Security, and GSA physical verification at Golden Jubilee terminal.</p>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 1.2rem; font-weight: 800; color: #16A34A; margin-bottom: 0.3rem;">Day 5: Release</div>
+            <strong style="color: #16A34A; font-size: 0.9rem;">Gate Pass & Handover</strong>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem;">Vehicle driven out of port gates, cleaned, fueled, and handed over to you.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: FOOTER & CONTACT -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Ophei Ansah Auto Imports">
+          <p>
+            Your premier direct vehicle importer and genuine spare parts supplier in Ghana. Specializing in high-grade Japan & Korea auction vehicles, safe container & RoRo ocean shipping, dependable car hire, and transparent GRA customs clearing.
+          </p>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <a href="https://wa.me/233245663155" target="_blank" class="btn-whatsapp-sm" style="font-size: 0.85rem; padding: 0.45rem 1rem;">
+              <span>💬</span> WhatsApp: 024 566 3155
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Standalone Pages</h4>
+          <ul class="footer-links">
+            <li><a href="buy-cars.php">Buy Practical Cars Showroom</a></li>
+            <li><a href="duty-estimator.php">Ghana GRA Customs Duty Estimator</a></li>
+            <li><a href="shipping.php">RoRo & Container Ocean Shipping</a></li>
+            <li><a href="shipping.php">Live Container / Vessel Tracking</a></li>
+            <li><a href="rental.php">Car Rental & Van Hiring</a></li>
+            <li><a href="spare-parts.php">Genuine Japanese Spare Parts</a></li>
+            <li><a href="contact.php">Contact & Tema Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Ghanaian Fleet</h4>
+          <ul class="footer-links">
+            <li><a href="buy-cars.php">Toyota Corolla LE & XLE</a></li>
+            <li><a href="buy-cars.php">Toyota RAV4 AWD</a></li>
+            <li><a href="buy-cars.php">Toyota Hiace Commuter Van</a></li>
+            <li><a href="buy-cars.php">Nissan NV350 Urvan Van</a></li>
+            <li><a href="buy-cars.php">Hyundai Elantra SE</a></li>
+            <li><a href="buy-cars.php">Toyota Hilux Double Cabin</a></li>
+            <li><a href="buy-cars.php">Toyota Prado TX-L 4x4</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Locations</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong>Tema Port Office:</strong><br>
+              Near Golden Jubilee Terminal & MPS Gate 3, Tema, Greater Accra, Ghana
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong>Accra Showroom & Yard:</strong><br>
+              Greater Accra Region, Ghana
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <div>
+              <strong>WhatsApp & Calls:</strong><br>
+              <a href="tel:0245663155" style="color: #FFFFFF; font-weight: 700;">024 566 3155</a> / +233 24 566 3155
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ophei Ansah Auto Imports. All Rights Reserved. Built with GRA ICUMS customs integration & direct Japan auction connectivity. | <a href="admin.php" style="color: var(--gold-light); text-decoration: none; font-weight: 600;">🔐 Admin Portal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON & QUICK ACTION DRAWER -->
+  <div class="floating-whatsapp-wrap">
+    <div class="whatsapp-popup-drawer" id="whatsappDrawer">
+      <div class="drawer-header">
+        <div>
+          <h5>Ophei Ansah Imports</h5>
+          <span>Online • Quick Assistance</span>
+        </div>
+        <button class="drawer-close" id="whatsappDrawerClose">✕</button>
+      </div>
+      <div class="drawer-body">
+        <a href="duty-estimator.php" class="drawer-action-btn">
+          <span>🧮</span> Calculate Vehicle Duty
+        </a>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah!%20I%20am%20interested%20in%20buying/importing%20a%20car%20from%20Japan." target="_blank" class="drawer-action-btn">
+          <span>🚗</span> Inquire About Buying a Car
+        </a>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah!%20I%20would%20like%20to%20book%20a%20car%20rental%20in%20Ghana." target="_blank" class="drawer-action-btn">
+          <span>🚙</span> Book Car Rental / Hire
+        </a>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah!%20I%20am%20looking%20for%20genuine%20imported%20spare%20parts." target="_blank" class="drawer-action-btn">
+          <span>⚙️</span> Order Spare Parts
+        </a>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah!%20I%20would%20like%20to%20chat%20with%20an%20import%20manager." target="_blank" class="drawer-action-btn" style="background: #E8F5E9; color: #128C7E;">
+          <span>💬</span> Chat with Manager (0245663155)
+        </a>
+      </div>
+    </div>
+
+    <button class="floating-whatsapp-btn" id="floatingWhatsappTrigger" aria-label="Chat on WhatsApp">
+      <div class="pulse-ring"></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </button>
+  </div>
+
+  <!-- Firebase SDK & Analytics (opheiansahimports) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script src="assets/js/firebase-config.js"></script>
+
+  <!-- JavaScript Engine -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

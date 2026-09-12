@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Admin Portal | Ophei Ansah Auto Imports</title>
+  <meta name="description" content="Ophei Ansah Auto Imports - Administrative Management Portal for Vehicle Fleet Inventory, Container Dispatch, Rental Fleet, Genuine Spare Parts, GRA Duty Estimator & Customer Inquiries.">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Core Admin Styles -->
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- ========================================================================
+       1. AUTHENTICATION VIEW (LOGIN SCREEN)
+       ======================================================================== -->
+  <div id="authView" class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">
+          <img src="logo.png" alt="Ophei Ansah Auto Imports">
+        </div>
+        <h1 class="auth-title">Ophei Ansah Portal</h1>
+        <p class="auth-subtitle">Executive Management & Auto Logistics Console</p>
+      </div>
+
+      <form id="adminLoginForm" class="auth-form">
+        <div class="form-group">
+          <label for="adminEmail">Admin Email</label>
+          <input type="email" id="adminEmail" class="form-control" value="admin@opheiansah.com" placeholder="admin@opheiansah.com" required>
+        </div>
+        <div class="form-group">
+          <label for="adminPassword">Security Key / Password</label>
+          <input type="password" id="adminPassword" class="form-control" value="admin2026" placeholder="Enter administrative password" required>
+        </div>
+
+        <div class="auth-actions">
+          <button type="submit" class="btn-admin-primary">
+            <span>🔐</span> Secure Sign In
+          </button>
+          <button type="button" id="btnQuickDemoLogin" class="btn-admin-secondary">
+            <span>⚡</span> One-Click Demo Access
+          </button>
+        </div>
+      </form>
+
+      <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="index.php" style="color: var(--text-muted); font-size: 0.8rem; text-decoration: none;">← Return to Public Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. AUTHENTICATED ADMIN DASHBOARD LAYOUT
+       ======================================================================== -->
+  <div id="appView" class="admin-layout" style="display: none;">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-logo">
+          <img src="logo.png" alt="Ophei Ansah Logo">
+        </div>
+        <div class="brand-text">
+          <h2>Ophei Ansah</h2>
+          <span>Auto Imports Admin</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Core Management</div>
+        <div class="admin-nav-item active" data-tab="dashboard">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </div>
+        <div class="admin-nav-item" data-tab="cars">
+          <span class="nav-icon">🚗</span>
+          <span>Vehicle Fleet</span>
+          <span class="badge-pill" id="badgeCarsCount">11</span>
+        </div>
+        <div class="admin-nav-item" data-tab="shipments">
+          <span class="nav-icon">🚢</span>
+          <span>Shipping & Tracking</span>
+          <span class="badge-pill" id="badgeShipmentsCount">3</span>
+        </div>
+        <div class="admin-nav-item" data-tab="rentals">
+          <span class="nav-icon">🚙</span>
+          <span>Car Rental Fleet</span>
+        </div>
+        <div class="admin-nav-item" data-tab="parts">
+          <span class="nav-icon">⚙️</span>
+          <span>Spare Parts Stock</span>
+        </div>
+
+        <div class="nav-section-title">CRM & Operations</div>
+        <div class="admin-nav-item" data-tab="inquiries">
+          <span class="nav-icon">📩</span>
+          <span>Leads & Inquiries</span>
+          <span class="badge-pill" id="badgeInquiriesCount" style="background: rgba(245, 158, 11, 0.25); color: var(--accent-amber);">1</span>
+        </div>
+        <div class="admin-nav-item" data-tab="settings">
+          <span class="nav-icon">⚙️</span>
+          <span>Duty & FX Settings</span>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-snippet">
+          <div class="user-avatar">OA</div>
+          <div class="user-info">
+            <h5>Ophei Ansah</h5>
+            <span><span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-emerald);"></span> Managing Director</span>
+          </div>
+        </div>
+        <button class="btn-icon-logout" id="btnLogout" title="Log Out">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main">
+
+      <!-- Top Header -->
+      <header class="admin-header">
+        <div class="header-left">
+          <button class="sidebar-toggle-btn" id="sidebarToggleBtn">☰</button>
+          <div class="page-title-wrap">
+            <h1 id="pageTitleHeading">Executive Overview</h1>
+            <p>Ophei Ansah Auto Imports Management Control Center</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="fx-live-badge" title="Active USD/GHS Rate used across Customs Duty Estimator and car valuations">
+            <span class="pulse-dot"></span>
+            <span>$1 USD ≈ <span class="fx-rate-display">GH₵ 15.50</span></span>
+          </div>
+          <a href="index.php" target="_blank" class="btn-view-site">
+            <span>🌐</span> View Public Site
+          </a>
+        </div>
+      </header>
+
+      <!-- Page Body Container -->
+      <div class="admin-body-content">
+
+        <!-- ==================================================================
+             TAB 1: DASHBOARD OVERVIEW
+             ================================================================== -->
+        <div class="admin-tab-pane active" id="tab-dashboard">
+          <!-- KPI Stats -->
+          <div class="kpi-grid">
+            <div class="kpi-card gold">
+              <div class="kpi-info">
+                <span class="kpi-label">Vehicles in Inventory</span>
+                <h3 class="kpi-value" id="kpiCarsCount">11</h3>
+                <p class="kpi-sub" id="kpiCarsValuation">Valuation: $100,500 USD</p>
+              </div>
+              <div class="kpi-icon-wrap" style="color: var(--gold-light);">🚗</div>
+            </div>
+
+            <div class="kpi-card blue">
+              <div class="kpi-info">
+                <span class="kpi-label">Active Shipments</span>
+                <h3 class="kpi-value" id="kpiShipmentsCount">3</h3>
+                <p class="kpi-sub">En route to Tema Port</p>
+              </div>
+              <div class="kpi-icon-wrap" style="color: #60A5FA;">🚢</div>
+            </div>
+
+            <div class="kpi-card green">
+              <div class="kpi-info">
+                <span class="kpi-label">Rental Fleet Models</span>
+                <h3 class="kpi-value" id="kpiRentalsCount">8</h3>
+                <p class="kpi-sub">Saloon, SUVs & Buses</p>
+              </div>
+              <div class="kpi-icon-wrap" style="color: #34D399;">🚙</div>
+            </div>
+
+            <div class="kpi-card purple">
+              <div class="kpi-info">
+                <span class="kpi-label">Customer Inquiries (CRM)</span>
+                <h3 class="kpi-value" id="kpiInquiriesCount">4 Total</h3>
+                <p class="kpi-sub">WhatsApp & Web Leads</p>
+              </div>
+              <div class="kpi-icon-wrap" style="color: #C084FC;">📩</div>
+            </div>
+          </div>
+
+          <!-- Fast Quick Actions & Activity Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            
+            <!-- Quick Actions Card -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <div class="admin-card-title"><span>⚡</span> Quick Administrative Actions</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+                <button class="btn-admin-secondary" onclick="AdminApp.openCarModal()">
+                  <span>🚗</span> Add New Vehicle
+                </button>
+                <button class="btn-admin-secondary" onclick="AdminApp.openShipmentModal()">
+                  <span>🚢</span> Create Shipment
+                </button>
+                <button class="btn-admin-secondary" onclick="AdminApp.openPartModal()">
+                  <span>⚙️</span> Add Spare Part
+                </button>
+                <button class="btn-admin-secondary" onclick="AdminApp.openRentalModal()">
+                  <span>🚙</span> Add Rental Unit
+                </button>
+              </div>
+
+              <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--admin-border-subtle);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <span style="font-size: 0.82rem; font-weight: 600; color: var(--text-muted);">Live GRA Customs Exchange Rate</span>
+                  <span class="fx-rate-display" style="font-size: 0.88rem; font-weight: 700; color: var(--gold-light);">GH₵ 15.50</span>
+                </div>
+                <p style="font-size: 0.78rem; color: var(--text-dim);">Changes to the FX rate instantly adjust calculations across the Ghana Duty Estimator and Vehicle Showroom.</p>
+              </div>
+            </div>
+
+            <!-- Active Shipments Snapshot -->
+            <div class="admin-card">
+              <div class="admin-card-header">
+                <div class="admin-card-title"><span>🛳️</span> Live Vessel & Port Consignments</div>
+              </div>
+              <div id="dashRecentShipments">
+                <!-- Dynamically rendered -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Inquiries / Leads -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>📥</span> Recent Customer Leads & WhatsApp Quote Requests</div>
+            </div>
+            <div id="dashRecentInquiries">
+              <!-- Dynamically rendered -->
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 2: VEHICLE FLEET INVENTORY
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-cars">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>🚗</span> Vehicles Fleet Inventory</div>
+              <div class="admin-card-actions">
+                <button class="btn-admin-primary" onclick="AdminApp.openCarModal()">
+                  <span>➕</span> Add New Vehicle
+                </button>
+              </div>
+            </div>
+
+            <!-- Toolbar & Search Filter -->
+            <div class="toolbar-wrap">
+              <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="carSearchInput" class="form-control" placeholder="Search by model, engine, origin...">
+              </div>
+              <div class="filter-chips">
+                <button class="filter-chip car-filter-chip active" data-filter="all">All Models</button>
+                <button class="filter-chip car-filter-chip" data-filter="sedan">Saloon / Sedan</button>
+                <button class="filter-chip car-filter-chip" data-filter="suv">SUVs</button>
+                <button class="filter-chip car-filter-chip" data-filter="hatchback">Hatchback</button>
+                <button class="filter-chip car-filter-chip" data-filter="pickup">Pickups</button>
+                <button class="filter-chip car-filter-chip" data-filter="van">Commercial Buses</button>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Vehicle Details</th>
+                    <th>Category</th>
+                    <th>CIF Tema ($)</th>
+                    <th>Est. Duty (GH₵)</th>
+                    <th>Est. Total (GH₵)</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="carsTableBody">
+                  <!-- Dynamically Rendered -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 3: SHIPPING & TRACKING DISPATCH
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-shipments">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>🚢</span> Container & RoRo Shipping Dispatch</div>
+              <div class="admin-card-actions">
+                <button class="btn-admin-primary" onclick="AdminApp.openShipmentModal()">
+                  <span>➕</span> Create Shipment Tracking
+                </button>
+              </div>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Manage real-time tracking codes for Japanese and Korean shipments en route to Tema Port (MPS Terminal 3 / Golden Jubilee). Customers can check these on the public Shipping & Tracking page.
+            </p>
+
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Tracking Code</th>
+                    <th>Vehicle & Consignee</th>
+                    <th>Vessel / Container</th>
+                    <th>ETA Date</th>
+                    <th>Transit Stage</th>
+                    <th>Latest Status Note</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="shipmentsTableBody">
+                  <!-- Dynamically Rendered -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 4: CAR RENTAL FLEET & RATES
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-rentals">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>🚙</span> Car Rental Fleet & Daily Rates</div>
+              <div class="admin-card-actions">
+                <button class="btn-admin-primary" onclick="AdminApp.openRentalModal()">
+                  <span>➕</span> Add Rental Model
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Vehicle Model</th>
+                    <th>Class</th>
+                    <th>Daily Rate (GH₵)</th>
+                    <th>Chauffeur / Driver Fee</th>
+                    <th>Fleet Units</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="rentalsTableBody">
+                  <!-- Dynamically Rendered -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 5: SPARE PARTS INVENTORY
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-parts">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>⚙️</span> Genuine Japanese & Korean Spare Parts</div>
+              <div class="admin-card-actions">
+                <button class="btn-admin-primary" onclick="AdminApp.openPartModal()">
+                  <span>➕</span> Add Spare Part
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Part Details</th>
+                    <th>Category</th>
+                    <th>Price (GH₵)</th>
+                    <th>Origin & Testing</th>
+                    <th>Stock Units</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="partsTableBody">
+                  <!-- Dynamically Rendered -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 6: INQUIRIES & LEADS CRM
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-inquiries">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <div class="admin-card-title"><span>📩</span> Customer Leads & WhatsApp Inquiries (CRM)</div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Inquiry ID</th>
+                    <th>Customer Name & Phone</th>
+                    <th>Service Type</th>
+                    <th>Details & Message</th>
+                    <th>Follow-up Status</th>
+                    <th>Quick Response</th>
+                  </tr>
+                </thead>
+                <tbody id="inquiriesTableBody">
+                  <!-- Dynamically Rendered -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             TAB 7: DUTY & FX SETTINGS
+             ================================================================== -->
+        <div class="admin-tab-pane" id="tab-settings">
+          <div class="settings-grid">
+            <!-- FX Configuration -->
+            <div class="settings-box">
+              <h4>💱 GRA Reference Exchange Rate</h4>
+              <p>Set the active conversion rate from United States Dollars ($ USD) to Ghana Cedis (GH₵).</p>
+
+              <form id="fxSettingsForm">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                  <label for="inputFxRate">Exchange Rate ($1 USD = GH₵)</label>
+                  <input type="number" step="0.01" min="1" id="inputFxRate" class="form-control" value="15.50" required>
+                </div>
+                <button type="submit" class="btn-admin-primary">
+                  <span>💾</span> Save & Apply Exchange Rate
+                </button>
+              </form>
+            </div>
+
+            <!-- GRA ICUMS Tariff Overview -->
+            <div class="settings-box">
+              <h4>📋 GRA Customs Tariff Reference</h4>
+              <p>Default Ghana Revenue Authority Statutory Rates applied in calculation algorithms:</p>
+
+              <ul style="font-size: 0.82rem; color: #CBD5E1; list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li>• <strong>Import Duty:</strong> 10% (Engine ≤ 1500cc & Pickups) / 20% (Engine &gt; 1500cc)</li>
+                <li>• <strong>Import VAT:</strong> 15% on (CIF + Duty + NHIL + GETFund)</li>
+                <li>• <strong>NHIL & GETFund:</strong> 2.5% + 2.5% on CIF</li>
+                <li>• <strong>COVID-19 & SIL Levies:</strong> 1.0% + 2.0% on CIF</li>
+                <li>• <strong>ECOWAS & EXIM:</strong> 0.5% + 0.75% on CIF</li>
+                <li>• <strong>ICUMS Processing Fee:</strong> GH₵ 850 (Fixed)</li>
+                <li>• <strong>Overage Penalty:</strong> 10-12 yrs (+5%), 12-15 yrs (+20%), &gt;15 yrs (+50%)</li>
+              </ul>
+            </div>
+
+            <!-- System Backup & Reset -->
+            <div class="settings-box">
+              <h4>💾 System Data Backup & Restore</h4>
+              <p>Export full inventory and configuration to JSON or restore to default demo data.</p>
+
+              <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <button class="btn-admin-secondary" id="btnExportData">
+                  <span>📥</span> Export All Data as JSON
+                </button>
+                <button class="btn-admin-secondary" id="btnResetData" style="color: #F87171; border-color: rgba(239, 68, 68, 0.3);">
+                  <span>⚠️</span> Reset All Data to Initial Defaults
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ========================================================================
+       MODALS
+       ======================================================================== -->
+
+  <!-- 1. Car Modal (Add / Edit) -->
+  <div class="admin-modal-overlay" id="carModal">
+    <div class="admin-modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="carModalTitle">Add New Vehicle to Inventory</h3>
+        <button class="modal-close-btn" onclick="AdminApp.closeModal('carModal')">×</button>
+      </div>
+      <form id="carForm" onsubmit="event.preventDefault(); AdminApp.saveCar();">
+        <input type="hidden" id="carEditId">
+        
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label>Vehicle Name / Title</label>
+            <input type="text" id="carName" class="form-control" placeholder="e.g. 2019 Toyota Corolla LE" required>
+          </div>
+          <div class="form-group">
+            <label>Body Type</label>
+            <select id="carType" class="form-control">
+              <option value="sedan">Saloon / Sedan</option>
+              <option value="suv">SUV / Crossover</option>
+              <option value="hatchback">Hatchback</option>
+              <option value="pickup">Pickup Truck (Commercial)</option>
+              <option value="van">Commercial Bus / Van</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Tagline / Highlights</label>
+          <input type="text" id="carTagline" class="form-control" placeholder="e.g. Ghana's #1 Daily Driver — Unmatched Fuel Efficiency">
+        </div>
+
+        <div class="form-grid-3" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Engine Specs</label>
+            <input type="text" id="carEngine" class="form-control" placeholder="1.8L 4-Cyl VVTi">
+          </div>
+          <div class="form-group">
+            <label>Transmission</label>
+            <input type="text" id="carTransmission" class="form-control" placeholder="Automatic CVT">
+          </div>
+          <div class="form-group">
+            <label>Mileage</label>
+            <input type="text" id="carMileage" class="form-control" placeholder="48,200 km">
+          </div>
+        </div>
+
+        <div class="form-grid-3" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Fuel Type</label>
+            <input type="text" id="carFuel" class="form-control" placeholder="Petrol">
+          </div>
+          <div class="form-group">
+            <label>Auction Grade</label>
+            <input type="text" id="carGrade" class="form-control" placeholder="Grade 4.5">
+          </div>
+          <div class="form-group">
+            <label>Origin Port</label>
+            <input type="text" id="carOrigin" class="form-control" placeholder="Japan (USS Tokyo)">
+          </div>
+        </div>
+
+        <div class="form-grid-3" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>CIF Tema Port ($ USD)</label>
+            <input type="number" id="carCifUsd" class="form-control" placeholder="5400" required>
+          </div>
+          <div class="form-group">
+            <label>Est. Duty (GH₵)</label>
+            <input type="number" id="carDutyGhs" class="form-control" placeholder="36500">
+          </div>
+          <div class="form-group">
+            <label>Availability Status</label>
+            <select id="carStatus" class="form-control">
+              <option value="available">Available</option>
+              <option value="transit">In Transit to Tema</option>
+              <option value="sold">Sold</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Vehicle Image Path</label>
+          <select id="carImage" class="form-control">
+            <option value="assets/images/toyota_corolla.jpg">Toyota Corolla</option>
+            <option value="assets/images/toyota_rav4.jpg">Toyota RAV4</option>
+            <option value="assets/images/hyundai_elantra.jpg">Hyundai Elantra</option>
+            <option value="assets/images/toyota_yaris.jpg">Toyota Yaris</option>
+            <option value="assets/images/honda_crv.jpg">Honda CR-V</option>
+            <option value="assets/images/toyota_camry.jpg">Toyota Camry</option>
+            <option value="assets/images/toyota_hilux.jpg">Toyota Hilux</option>
+            <option value="assets/images/toyota_prado.jpg">Toyota Land Cruiser Prado</option>
+            <option value="assets/images/kia_picanto.jpg">Kia Picanto</option>
+            <option value="assets/images/toyota_hiace.jpg">Toyota Hiace Bus</option>
+            <option value="assets/images/nissan_urvan.jpg">Nissan Urvan Caravan</option>
+          </select>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-admin-secondary" onclick="AdminApp.closeModal('carModal')">Cancel</button>
+          <button type="submit" class="btn-admin-primary">Save Vehicle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Shipment Modal (Add / Edit) -->
+  <div class="admin-modal-overlay" id="shipmentModal">
+    <div class="admin-modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="shipmentModalTitle">Create New Shipment Tracking</h3>
+        <button class="modal-close-btn" onclick="AdminApp.closeModal('shipmentModal')">×</button>
+      </div>
+      <form id="shipmentForm" onsubmit="event.preventDefault(); AdminApp.saveShipment();">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label>Tracking Code / Consignment ID</label>
+            <input type="text" id="shipmentCode" class="form-control" placeholder="e.g. OA-7829-GH" required>
+          </div>
+          <div class="form-group">
+            <label>Chassis / VIN Number</label>
+            <input type="text" id="shipmentVin" class="form-control" placeholder="2T3C1RFV2MC891044">
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Vehicle Description</label>
+          <input type="text" id="shipmentVehicle" class="form-control" placeholder="e.g. 2019 Toyota RAV4 XLE AWD (Magnetic Gray)" required>
+        </div>
+
+        <div class="form-grid-2" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Port of Origin</label>
+            <input type="text" id="shipmentOrigin" class="form-control" placeholder="Yokohama Port (Japan)">
+          </div>
+          <div class="form-group">
+            <label>Destination Port</label>
+            <input type="text" id="shipmentDestination" class="form-control" placeholder="Port of Tema (MPS Terminal 3)">
+          </div>
+        </div>
+
+        <div class="form-grid-2" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Vessel / Carrier Name</label>
+            <input type="text" id="shipmentVessel" class="form-control" placeholder="MSC AURELIA V.049W">
+          </div>
+          <div class="form-group">
+            <label>Container Number</label>
+            <input type="text" id="shipmentContainer" class="form-control" placeholder="MSCU-9910482-40HC">
+          </div>
+        </div>
+
+        <div class="form-grid-2" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Estimated Arrival (ETA)</label>
+            <input type="text" id="shipmentEta" class="form-control" placeholder="September 24, 2026">
+          </div>
+          <div class="form-group">
+            <label>Current Transit Stage (1 to 5)</label>
+            <select id="shipmentStage" class="form-control">
+              <option value="1">1. Yard & Inspection (Japan/Korea)</option>
+              <option value="2">2. Export Customs (Loaded Onboard)</option>
+              <option value="3">3. Ocean Transit (En Route to Ghana)</option>
+              <option value="4">4. Tema Port Berth (MPS Terminal)</option>
+              <option value="5">5. ICUMS Cleared (Handover Ready)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Status Note / Headline</label>
+          <input type="text" id="shipmentNote" class="form-control" placeholder="Vessel in Ocean Transit heading to Gulf of Guinea">
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Latest Position / Timestamp Log</label>
+          <input type="text" id="shipmentLastUpdate" class="form-control" placeholder="Cruising Speed 18.2 knots on schedule">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-admin-secondary" onclick="AdminApp.closeModal('shipmentModal')">Cancel</button>
+          <button type="submit" class="btn-admin-primary">Save Shipment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Rental Modal (Add / Edit) -->
+  <div class="admin-modal-overlay" id="rentalModal">
+    <div class="admin-modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Edit Rental Unit Rate</h3>
+        <button class="modal-close-btn" onclick="AdminApp.closeModal('rentalModal')">×</button>
+      </div>
+      <form id="rentalForm" onsubmit="event.preventDefault(); AdminApp.saveRental();">
+        <input type="hidden" id="rentalKey">
+        <div class="form-group">
+          <label>Vehicle Model Name</label>
+          <input type="text" id="rentalName" class="form-control" placeholder="Toyota Corolla (Saloon)" required>
+        </div>
+        <div class="form-grid-3" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Vehicle Class</label>
+            <input type="text" id="rentalCategory" class="form-control" placeholder="Saloon">
+          </div>
+          <div class="form-group">
+            <label>Daily Rate (GH₵ / Day)</label>
+            <input type="number" id="rentalDailyRate" class="form-control" placeholder="450" required>
+          </div>
+          <div class="form-group">
+            <label>Fleet Units</label>
+            <input type="number" id="rentalFleetCount" class="form-control" placeholder="5">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-admin-secondary" onclick="AdminApp.closeModal('rentalModal')">Cancel</button>
+          <button type="submit" class="btn-admin-primary">Save Rental Unit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Spare Parts Modal (Add / Edit) -->
+  <div class="admin-modal-overlay" id="partModal">
+    <div class="admin-modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Add / Edit Spare Part Item</h3>
+        <button class="modal-close-btn" onclick="AdminApp.closeModal('partModal')">×</button>
+      </div>
+      <form id="partForm" onsubmit="event.preventDefault(); AdminApp.savePart();">
+        <input type="hidden" id="partEditId">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label>Part Name / Specification</label>
+            <input type="text" id="partName" class="form-control" placeholder="Toyota 1NZ-FE 1.5L Complete Engine" required>
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="partCategory" class="form-control">
+              <option value="engine">Engine Parts</option>
+              <option value="transmission">Transmission & Gearbox</option>
+              <option value="suspension">Suspension & Shocks</option>
+              <option value="brakes">Brakes & Rotors</option>
+              <option value="electrical">Electrical & Headlights</option>
+              <option value="wheels">Alloy Rims & Wheels</option>
+              <option value="cooling">Cooling & Radiators</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Price in Ghana Cedis (GH₵)</label>
+            <input type="number" id="partPriceGhs" class="form-control" placeholder="8500" required>
+          </div>
+          <div class="form-group">
+            <label>Units in Stock</label>
+            <input type="number" id="partStock" class="form-control" placeholder="5">
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 0.75rem;">
+          <label>Compatibility / Fits Description</label>
+          <input type="text" id="partFits" class="form-control" placeholder="Fits Toyota Corolla, Yaris, Vitz, Premio (Direct Japan)">
+        </div>
+
+        <div class="form-grid-2" style="margin-top: 0.75rem;">
+          <div class="form-group">
+            <label>Origin & Testing Grade</label>
+            <input type="text" id="partOrigin" class="form-control" placeholder="Japan (Grade A Low Mileage)">
+          </div>
+          <div class="form-group">
+            <label>Image Selection</label>
+            <select id="partImage" class="form-control">
+              <option value="assets/images/engine_japanese.jpg">Japanese Engine</option>
+              <option value="assets/images/gearbox_transmission.jpg">Gearbox / Transmission</option>
+              <option value="assets/images/suspension_shocks.jpg">Shock Absorbers</option>
+              <option value="assets/images/brakes_rotors.jpg">Brake Rotors</option>
+              <option value="assets/images/headlights_assembly.jpg">Headlight Assembly</option>
+              <option value="assets/images/alternator_parts.jpg">Alternator / Starter</option>
+              <option value="assets/images/alloy_wheels.jpg">Alloy Wheels</option>
+              <option value="assets/images/radiator_part.jpg">Engine Radiator</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-admin-secondary" onclick="AdminApp.closeModal('partModal')">Cancel</button>
+          <button type="submit" class="btn-admin-primary">Save Spare Part</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Firebase SDK & Analytics (opheiansahimports) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script src="assets/js/firebase-config.js"></script>
+
+  <!-- Admin Controller -->
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

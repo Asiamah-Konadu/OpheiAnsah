@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Ophei Ansah Auto Imports | Tema Port Office & Accra Showroom</title>
+  <meta name="description" content="Contact Ophei Ansah Auto Imports in Ghana. Tema Port clearing office near Golden Jubilee Terminal and Accra showroom. WhatsApp & Phone: 0245663155. Car imports, rental & spare parts.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Ghana Flag Accent Stripe -->
+  <div class="ghana-stripe"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Direct Japan & Korea Vehicle Imports | Tema Port Clearing & Accra Showroom
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="currency-badge">💱 Reference Rate: $1 ≈ GH₵ 15.50</span>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20want%20to%20get%20in%20touch." target="_blank" class="hotline-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Hotline: 024 566 3155
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.php" class="brand-logo" title="Ophei Ansah Auto Imports">
+          <img src="logo.png" alt="Ophei Ansah Auto Imports Logo">
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.php" class="nav-link">Home</a></li>
+          <li><a href="buy-cars.php" class="nav-link">Buy Cars</a></li>
+          <li><a href="duty-estimator.php" class="nav-link">Duty Estimator</a></li>
+          <li><a href="shipping.php" class="nav-link">Shipping & Track</a></li>
+          <li><a href="rental.php" class="nav-link">Car Rental</a></li>
+          <li><a href="spare-parts.php" class="nav-link">Spare Parts</a></li>
+          <li><a href="contact.php" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="duty-estimator.php" class="btn-duty-calc-nav">
+            <span>🧮</span> GRA Duty Calc
+          </a>
+          <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20would%20like%20to%20visit%20your%20office%20or%20speak%20with%20an%20agent." target="_blank" class="btn-whatsapp-sm">
+            <span>💬</span> 0245663155
+          </a>
+          <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container page-banner-inner">
+      <span class="badge-pill">We are Here in Ghana to Help</span>
+      <h1>Contact Ophei Ansah Auto Imports</h1>
+      <p>
+        Visit our Tema Port clearing desk, tour our Greater Accra vehicle display yard, or speak directly with our senior import specialists. We answer fast on WhatsApp at 024 566 3155.
+      </p>
+      <div class="breadcrumb-nav">
+        <a href="index.php">Home</a>
+        <span>/</span>
+        <span style="color: #FFFFFF;">Contact Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section style="padding: 4rem 0;">
+    <div class="container">
+      <div class="contact-section-grid">
+        
+        <!-- Left Column: Contact Info Cards -->
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.5rem; color: var(--navy-deep); margin-bottom: 1.5rem;">Get in Touch Directly</h3>
+
+          <div class="contact-item-box">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-content">
+              <h4>Tema Port Customs Clearing Office</h4>
+              <p>Near Golden Jubilee Terminal & MPS Gate 3, Commercial Warehouse Area, Tema, Greater Accra, Ghana</p>
+            </div>
+          </div>
+
+          <div class="contact-item-box">
+            <div class="contact-item-icon">🚗</div>
+            <div class="contact-item-content">
+              <h4>Accra Showroom & Vehicle Yard</h4>
+              <p>Greater Accra Region, Ghana (Direct vehicle inspections and test drives)</p>
+            </div>
+          </div>
+
+          <div class="contact-item-box">
+            <div class="contact-item-icon">💬</div>
+            <div class="contact-item-content">
+              <h4>Direct WhatsApp & Phone Hotline</h4>
+              <p>
+                <a href="tel:0245663155" style="color: var(--navy-deep); font-weight: 700; font-size: 1.05rem;">024 566 3155</a><br>
+                International: <a href="https://wa.me/233245663155" target="_blank" style="color: var(--gold-dark); font-weight: 600;">+233 24 566 3155</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item-box">
+            <div class="contact-item-icon">⏱️</div>
+            <div class="contact-item-content">
+              <h4>Operating Hours (Ghana GMT)</h4>
+              <p>
+                Monday – Friday: 7:30 AM – 6:00 PM<br>
+                Saturday: 8:00 AM – 4:00 PM<br>
+                Sunday: Emergency clearing inquiries on WhatsApp
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item-box">
+            <div class="contact-item-icon">🗾</div>
+            <div class="contact-item-content">
+              <h4>Japan Auction Bidding Desk</h4>
+              <p>
+                USS Tokyo, TAA Yokohama & Aucnet live bidding auctions run weekly. Bidding orders accepted 24/7 via WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding: 1rem; background: #E8F5E9; border-radius: var(--radius-md); border: 1px solid #C8E6C9;">
+            <div style="font-weight: 700; color: #166534; font-size: 0.9rem; margin-bottom: 0.2rem;">⚡ Rapid WhatsApp Response Guarantee</div>
+            <p style="font-size: 0.82rem; color: #15803D; margin: 0;">Our on-ground desk responds to all vehicle and clearing inquiries within 5 to 10 minutes during business hours.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive WhatsApp Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.5rem; color: var(--navy-deep); margin-bottom: 0.5rem;">Send Us an Inquiry</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+            Fill in your details and click submit. It will automatically open WhatsApp with your customized inquiry for instant support.
+          </p>
+
+          <form id="contactInquiryForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="contactName">Your Full Name:</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Kwame Mensah" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone">Phone / WhatsApp Number:</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. 024 123 4567" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactService">Service of Interest:</label>
+                <select id="contactService" class="form-control">
+                  <option value="Buy Vehicle from Japan/Korea">Buy Vehicle from Japan / Korea</option>
+                  <option value="GRA ICUMS Duty Calculation">GRA ICUMS Duty Calculation</option>
+                  <option value="Port of Tema Customs Clearing">Port of Tema Customs Clearing</option>
+                  <option value="Car / Commercial Van Rental">Car / Commercial Van Rental</option>
+                  <option value="Genuine Japanese Spare Parts">Genuine Japanese Spare Parts</option>
+                  <option value="General Question / Consultation">General Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactMessage">Your Message / Vehicle Requirement:</label>
+                <textarea id="contactMessage" class="form-control" rows="4" placeholder="Tell us the car make, model, year, budget, or specific spare part you need..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-send-whatsapp-duty" style="margin-top: 1.25rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              Send Message to WhatsApp (0245663155)
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Directions Guide -->
+      <div style="margin-top: 3.5rem; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <span style="font-size: 1.5rem;">🗺️</span>
+          <h3 style="font-size: 1.3rem; color: var(--navy-deep);">Visiting Our Tema Port Clearing Office</h3>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+          From Accra via the Accra-Tema Motorway: Take the Tema Roundabout exit toward Harbour Road. Proceed toward Golden Jubilee Terminal Gate. Our office is located in the commercial logistics block directly adjacent to the Ghana Revenue Authority Customs Long Room. Call <strong>024 566 3155</strong> upon arrival for immediate reception.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: FOOTER & CONTACT -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Ophei Ansah Auto Imports">
+          <p>
+            Your premier direct vehicle importer and genuine spare parts supplier in Ghana. Specializing in high-grade Japan & Korea auction vehicles, safe container & RoRo ocean shipping, dependable car hire, and transparent GRA customs clearing.
+          </p>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <a href="https://wa.me/233245663155" target="_blank" class="btn-whatsapp-sm" style="font-size: 0.85rem; padding: 0.45rem 1rem;">
+              <span>💬</span> WhatsApp: 024 566 3155
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Standalone Pages</h4>
+          <ul class="footer-links">
+            <li><a href="buy-cars.php">Buy Practical Cars Showroom</a></li>
+            <li><a href="duty-estimator.php">Ghana GRA Customs Duty Estimator</a></li>
+            <li><a href="shipping.php">RoRo & Container Ocean Shipping</a></li>
+            <li><a href="shipping.php">Live Container / Vessel Tracking</a></li>
+            <li><a href="rental.php">Car Rental & Van Hiring</a></li>
+            <li><a href="spare-parts.php">Genuine Japanese Spare Parts</a></li>
+            <li><a href="contact.php">Contact & Tema Office</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Ghanaian Fleet</h4>
+          <ul class="footer-links">
+            <li><a href="buy-cars.php">Toyota Corolla LE & XLE</a></li>
+            <li><a href="buy-cars.php">Toyota RAV4 AWD</a></li>
+            <li><a href="buy-cars.php">Toyota Hiace Commuter Van</a></li>
+            <li><a href="buy-cars.php">Nissan NV350 Urvan Van</a></li>
+            <li><a href="buy-cars.php">Hyundai Elantra SE</a></li>
+            <li><a href="buy-cars.php">Toyota Hilux Double Cabin</a></li>
+            <li><a href="buy-cars.php">Toyota Prado TX-L 4x4</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Locations</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong>Tema Port Office:</strong><br>
+              Near Golden Jubilee Terminal & MPS Gate 3, Tema, Greater Accra, Ghana
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong>Accra Showroom & Yard:</strong><br>
+              Greater Accra Region, Ghana
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <div>
+              <strong>WhatsApp & Calls:</strong><br>
+              <a href="tel:0245663155" style="color: #FFFFFF; font-weight: 700;">024 566 3155</a> / +233 24 566 3155
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ophei Ansah Auto Imports. All Rights Reserved. Built with GRA ICUMS customs integration & direct Japan auction connectivity. | <a href="admin.php" style="color: var(--gold-light); text-decoration: none; font-weight: 600;">🔐 Admin Portal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON & QUICK ACTION DRAWER -->
+  <div class="floating-whatsapp-wrap">
+    <div class="whatsapp-popup-drawer" id="whatsappDrawer">
+      <div class="drawer-header">
+        <div>
+          <h5>Ophei Ansah Imports</h5>
+          <span>Online • Quick Assistance</span>
+        </div>
+        <button class="drawer-close" id="whatsappDrawerClose">✕</button>
+      </div>
+      <div class="drawer-body">
+        <a href="duty-estimator.php" class="drawer-action-btn">
+          <span>🧮</span> Calculate Vehicle Duty
+        </a>
+        <a href="buy-cars.php" class="drawer-action-btn">
+          <span>🚗</span> Inquire About Buying a Car
+        </a>
+        <a href="rental.php" class="drawer-action-btn">
+          <span>🚙</span> Book Car Rental / Hire
+        </a>
+        <a href="spare-parts.php" class="drawer-action-btn">
+          <span>⚙️</span> Order Spare Parts
+        </a>
+        <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah!%20I%20would%20like%20to%20chat%20with%20an%20import%20manager." target="_blank" class="drawer-action-btn" style="background: #E8F5E9; color: #128C7E;">
+          <span>💬</span> Chat with Manager (0245663155)
+        </a>
+      </div>
+    </div>
+
+    <button class="floating-whatsapp-btn" id="floatingWhatsappTrigger" aria-label="Chat on WhatsApp">
+      <div class="pulse-ring"></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </button>
+  </div>
+
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const phone = document.getElementById('contactPhone').value.trim();
+      const service = document.getElementById('contactService').value;
+      const msg = document.getElementById('contactMessage').value.trim();
+
+      // Save into Admin CRM Inquiries
+      try {
+        const stored = localStorage.getItem('OA_INQUIRIES');
+        const inqs = stored ? JSON.parse(stored) : [];
+        inqs.unshift({
+          id: 'INQ-' + Math.floor(1000 + Math.random() * 9000),
+          name: name || 'Website Visitor',
+          phone: phone || 'N/A',
+          type: service || 'General Inquiry',
+          subject: 'Website Contact Form: ' + service,
+          message: msg || 'No message provided',
+          date: new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }),
+          status: 'new'
+        });
+        localStorage.setItem('OA_INQUIRIES', JSON.stringify(inqs));
+      } catch (err) {}
+
+      const text = `Hello Ophei Ansah Auto Imports!%0A%0A` +
+        `👤 *Name:* ${encodeURIComponent(name)}%0A` +
+        `📞 *Contact:* ${encodeURIComponent(phone)}%0A` +
+        `📌 *Service:* ${encodeURIComponent(service)}%0A` +
+        `💬 *Message:* ${encodeURIComponent(msg)}`;
+
+      if (window.OpheiFirebase?.trackWhatsAppContact) {
+        window.OpheiFirebase.trackWhatsAppContact('Contact Form Inquiry', service);
+      }
+
+      window.open(`https://wa.me/233245663155?text=${text}`, '_blank');
+    }
+  </script>
+
+  <!-- Firebase SDK & Analytics (opheiansahimports) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script src="assets/js/firebase-config.js"></script>
+
+  <!-- JavaScript Engine -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
