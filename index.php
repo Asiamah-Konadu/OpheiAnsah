@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ophei Ansah Auto Imports | Japan & Korea Vehicle Imports, Rental, Shipping, Spare Parts & Ghana Duty Estimator</title>
   <meta name="description" content="Ophei Ansah Auto Imports - Direct Japan & Korea car buying, container & RoRo shipping to Tema Port, car rental & hire, genuine Japanese spare parts, and instant GRA ICUMS customs duty cost estimator. WhatsApp: 0245663155.">
+  <meta name="keywords" content="car imports Ghana, Japan car import, Korea car import, Tema Port clearing, GRA duty estimator, car rental Accra, spare parts Ghana, ICUMS duty calculator">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/">
+  <meta property="og:title" content="Ophei Ansah Auto Imports | Japan & Korea Vehicle Imports in Ghana">
+  <meta property="og:description" content="Direct Japan & Korea car imports, container & RoRo shipping to Tema Port, car rental, genuine spare parts & instant GRA duty estimator. WhatsApp: 0245663155.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ophei Ansah Auto Imports | Japan & Korea Vehicle Imports in Ghana">
+  <meta name="twitter:description" content="Direct Japan & Korea car imports, container & RoRo shipping to Tema Port, car rental, genuine spare parts & instant GRA duty estimator. WhatsApp: 0245663155.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":["AutoDealer","LocalBusiness"],"name":"Ophei Ansah Auto Imports","description":"Direct Japan and Korea car imports to Tema Port, car rental, spare parts and GRA ICUMS duty estimator in Ghana.","url":"https://ophei-ansah.vercel.app/","logo":"https://ophei-ansah.vercel.app/logo.png","image":"https://ophei-ansah.vercel.app/logo.png","telephone":"+233245663155","priceRange":"$","address":{"@type":"PostalAddress","addressLocality":"Tema","addressRegion":"Greater Accra","addressCountry":"GH"},"sameAs":["https://wa.me/233245663155"],"areaServed":[{"@type":"City","name":"Accra"},{"@type":"City","name":"Tema"},{"@type":"City","name":"Kumasi"}]}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
 
   <!-- Stylesheet -->

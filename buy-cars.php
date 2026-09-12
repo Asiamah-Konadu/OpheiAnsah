@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buy Practical Japan & Korea Cars in Ghana | Ophei Ansah Auto Imports</title>
   <meta name="description" content="Direct Japanese & Korean auction vehicle imports to Tema Port. Practical cars driven in Ghana: Toyota Corolla, RAV4, Camry, Yaris, Hilux, Prado, and commercial Toyota Hiace & Nissan Urvan vans. WhatsApp: 0245663155.">
+  <meta name="keywords" content="buy Japan cars Ghana, Korean car imports, Toyota Corolla Ghana, Toyota RAV4 Ghana, Tema Port car import, used Japanese cars Ghana">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/buy-cars.php">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/buy-cars.php">
+  <meta property="og:title" content="Buy Japan & Korea Cars in Ghana | Ophei Ansah Auto Imports">
+  <meta property="og:description" content="Direct Japanese and Korean auction vehicle imports to Tema Port. Toyota Corolla, RAV4, Camry, Hilux, Prado and commercial vans. WhatsApp: 0245663155.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Buy Japan & Korea Cars in Ghana | Ophei Ansah Auto Imports">
+  <meta name="twitter:description" content="Direct Japanese and Korean auction vehicle imports to Tema Port. Toyota Corolla, RAV4, Camry, Hilux, Prado and commercial vans. WhatsApp: 0245663155.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemPage","name":"Buy Japan and Korea Cars in Ghana","description":"Direct Japanese and Korean auction vehicle imports to Tema Port.","url":"https://ophei-ansah.vercel.app/buy-cars.php"}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>

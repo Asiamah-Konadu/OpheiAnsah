@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Genuine Japan & Korea Auto Spare Parts in Ghana | Ophei Ansah Auto Imports</title>
   <meta name="description" content="Authentic imported Japanese spare parts in Ghana. Tested 1NZ/2ZR engines, automatic gearboxes, KYB shock absorbers, brake rotors, alternators, radiators, and alloy rims. Wholesale to Abossey Okai & Kumasi. WhatsApp: 0245663155.">
+  <meta name="keywords" content="Japanese spare parts Ghana, Toyota spare parts Ghana, engine Ghana, gearbox Ghana, KYB shock absorbers, Abossey Okai spare parts, auto parts Ghana">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/spare-parts.php">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/spare-parts.php">
+  <meta property="og:title" content="Genuine Japanese Auto Spare Parts in Ghana | Ophei Ansah">
+  <meta property="og:description" content="Authentic imported Japanese and Korean spare parts in Ghana. Tested engines, gearboxes, KYB shocks, brakes, alternators and alloy rims. Wholesale available. WhatsApp: 0245663155.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Genuine Japanese Auto Spare Parts in Ghana | Ophei Ansah">
+  <meta name="twitter:description" content="Authentic imported Japanese and Korean spare parts in Ghana. Tested engines, gearboxes, KYB shocks, brakes, alternators and alloy rims. Wholesale available. WhatsApp: 0245663155.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Store","name":"Ophei Ansah Auto Imports - Spare Parts","description":"Authentic imported Japanese spare parts in Ghana.","url":"https://ophei-ansah.vercel.app/spare-parts.php","telephone":"+233245663155"}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>

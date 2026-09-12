@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vehicle Shipping from Japan to Tema Port & Live Tracking | Ophei Ansah Auto Imports</title>
   <meta name="description" content="Direct RoRo and 40ft High Cube container shipping from Yokohama, Nagoya, and Busan to Tema Port, Ghana. Live ocean container and VIN tracking simulator. WhatsApp: 0245663155.">
+  <meta name="keywords" content="car shipping Japan to Ghana, RoRo shipping Tema Port, container shipping Ghana, Yokohama to Tema, vehicle shipping Ghana, car tracking Ghana">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/shipping.php">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/shipping.php">
+  <meta property="og:title" content="Car Shipping from Japan to Tema Port, Ghana | Ophei Ansah">
+  <meta property="og:description" content="RoRo and 40ft container shipping from Yokohama, Nagoya and Busan to Tema Port, Ghana. Live container and VIN tracking. WhatsApp: 0245663155.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Car Shipping from Japan to Tema Port, Ghana | Ophei Ansah">
+  <meta name="twitter:description" content="RoRo and 40ft container shipping from Yokohama, Nagoya and Busan to Tema Port, Ghana. Live container and VIN tracking. WhatsApp: 0245663155.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","name":"Vehicle Shipping from Japan to Tema Port","serviceType":"Vehicle Shipping and Freight Forwarding","url":"https://ophei-ansah.vercel.app/shipping.php","provider":{"@type":"Organization","name":"Ophei Ansah Auto Imports","telephone":"+233245663155"}}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>

@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Ophei Ansah Auto Imports | Tema Port Office & Accra Showroom</title>
   <meta name="description" content="Contact Ophei Ansah Auto Imports in Ghana. Tema Port clearing office near Golden Jubilee Terminal and Accra showroom. WhatsApp & Phone: 0245663155. Car imports, rental & spare parts.">
+  <meta name="keywords" content="contact Ophei Ansah, car importer Ghana contact, Tema Port office, Accra car showroom, WhatsApp car import Ghana, 0245663155">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/contact.php">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/contact.php">
+  <meta property="og:title" content="Contact Ophei Ansah Auto Imports | Tema & Accra, Ghana">
+  <meta property="og:description" content="Get in touch via WhatsApp or phone (0245663155). Tema Port clearing office near Golden Jubilee Terminal and Accra showroom. Car imports, rental and spare parts.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Ophei Ansah Auto Imports | Tema & Accra, Ghana">
+  <meta name="twitter:description" content="Get in touch via WhatsApp or phone (0245663155). Tema Port clearing office near Golden Jubilee Terminal and Accra showroom. Car imports, rental and spare parts.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ContactPage","name":"Contact Ophei Ansah Auto Imports","url":"https://ophei-ansah.vercel.app/contact.php","isPartOf":{"@type":"WebSite","name":"Ophei Ansah Auto Imports","url":"https://ophei-ansah.vercel.app/"}}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>

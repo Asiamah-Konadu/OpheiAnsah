@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ghana Customs Duty Cost Estimator (GRA / ICUMS) | Ophei Ansah Auto Imports</title>
   <meta name="description" content="Calculate Ghana Revenue Authority (GRA) ICUMS vehicle import duty, VAT, NHIL, GETFund, and overage penalty before shipping to Port of Tema. Instant calculation & WhatsApp report. Call 0245663155.">
+  <meta name="keywords" content="Ghana duty calculator, GRA ICUMS duty estimator, vehicle import duty Ghana, customs duty Tema Port, car import tax Ghana">
+  <meta name="author" content="Ophei Ansah Auto Imports">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ophei-ansah.vercel.app/duty-estimator.php">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ophei Ansah Auto Imports">
+  <meta property="og:url" content="https://ophei-ansah.vercel.app/duty-estimator.php">
+  <meta property="og:title" content="Ghana Car Import Duty Estimator (GRA / ICUMS) | Ophei Ansah">
+  <meta property="og:description" content="Instantly calculate Ghana customs import duty, VAT, NHIL, GETFund and overage levy before shipping your car to Tema Port. Free WhatsApp report. Call 0245663155.">
+  <meta property="og:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta property="og:image:alt" content="Ophei Ansah Auto Imports">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GH">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ghana Car Import Duty Estimator (GRA / ICUMS) | Ophei Ansah">
+  <meta name="twitter:description" content="Instantly calculate Ghana customs import duty, VAT, NHIL, GETFund and overage levy before shipping your car to Tema Port. Free WhatsApp report. Call 0245663155.">
+  <meta name="twitter:image" content="https://ophei-ansah.vercel.app/logo.png">
+  <meta name="twitter:image:alt" content="Ophei Ansah Auto Imports">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Ghana Vehicle Import Duty Estimator (GRA ICUMS)","description":"Calculate GRA ICUMS vehicle import duty, VAT, NHIL, GETFund before shipping to Tema.","url":"https://ophei-ansah.vercel.app/duty-estimator.php","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"GHS"},"author":{"@type":"Organization","name":"Ophei Ansah Auto Imports","telephone":"+233245663155"}}
+  </script>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
