@@ -1968,6 +1968,12 @@ section {
    RESPONSIVE OVERRIDES
    ========================================================================== */
 @media (max-width: 900px) {
+  .top-bar,
+  .btn-duty-calc-nav,
+  .btn-whatsapp-sm {
+    display: none;
+  }
+
   .nav-menu {
     position: fixed;
     top: 75px;
