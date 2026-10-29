@@ -301,14 +301,25 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   HERO SECTION
+   HERO SECTION - CINEMATIC SPOTLIGHT & DUST MOTES
    ========================================================================== */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-deep) 60%, #152E50 100%);
+  background: radial-gradient(circle at 50% 25%, #0B1626 0%, #050B14 55%, #02050A 100%);
   color: #FFFFFF;
-  padding: 4.5rem 0 3.5rem;
+  padding: 3.5rem 0 3.5rem;
   overflow: hidden;
+  min-height: 620px;
+}
+
+.hero-cinematic-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-overlay-grid {
@@ -318,12 +329,223 @@ button, input, select, textarea {
   width: 100%;
   height: 100%;
   background-image: 
-    radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
-    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 36px 36px;
   background-position: 0 0, 18px 18px;
-  opacity: 0.6;
+  opacity: 0.4;
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Luxury Brand Emblem Showcase Centerpiece */
+.hero-luxury-emblem-showcase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  z-index: 3;
+}
+
+.emblem-badge-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.emblem-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.28) 0%, rgba(212, 175, 55, 0.08) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(12px);
+  pointer-events: none;
+  animation: emblemPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes emblemPulse {
+  0% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.95; }
+}
+
+.emblem-badge-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle at 35% 35%, rgba(18, 32, 54, 0.85) 0%, rgba(6, 12, 22, 0.96) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.55);
+  border-radius: 50%;
+  padding: 1.25rem;
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.75),
+    0 0 25px rgba(212, 175, 55, 0.35),
+    inset 0 0 18px rgba(212, 175, 55, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.emblem-badge-card:hover {
+  border-color: rgba(255, 235, 180, 0.9);
+  box-shadow: 
+    0 16px 45px rgba(0, 0, 0, 0.85),
+    0 0 40px rgba(212, 175, 55, 0.55),
+    inset 0 0 24px rgba(212, 175, 55, 0.35),
+    inset 0 2px 6px rgba(255, 255, 255, 0.6);
+}
+
+.emblem-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 12px rgba(212, 175, 55, 0.45));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  pointer-events: none;
+}
+
+.emblem-specular-sweep {
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.08) 25%, 
+    rgba(255, 245, 215, 0.7) 50%, 
+    rgba(212, 175, 55, 0.3) 75%, 
+    transparent 100%
+  );
+  transform: rotate(35deg);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.animate-gleam .emblem-specular-sweep {
+  animation: specularGleam 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes specularGleam {
+  0% { left: -120%; opacity: 0; }
+  15% { opacity: 0.85; }
+  85% { opacity: 0.85; }
+  100% { left: 180%; opacity: 0; }
+}
+
+.emblem-shadow {
+  position: absolute;
+  bottom: -18px;
+  width: 110px;
+  height: 16px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, transparent 75%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.emblem-stage-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+  padding: 0.3rem 0.9rem;
+  background: rgba(14, 26, 44, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.stage-tag {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.stage-divider {
+  color: rgba(212, 175, 55, 0.6);
+}
+
+.stage-rating {
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+/* Floating Cinematic Interactive Controls */
+.hero-cinematic-controls {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 5;
+}
+
+.cinematic-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(10, 20, 36, 0.75);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #E2E8F0;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.cinematic-ctrl-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.7);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.cinematic-ctrl-btn.active {
+  background: rgba(212, 175, 55, 0.22);
+  border-color: var(--gold-light);
+  color: var(--gold-light);
+}
+
+@media (max-width: 768px) {
+  .hero-cinematic-controls {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+  .cinematic-ctrl-btn .ctrl-text {
+    display: none;
+  }
+  .emblem-badge-card {
+    width: 115px;
+    height: 115px;
+    padding: 1rem;
+  }
+  .emblem-stage-info {
+    font-size: 0.68rem;
+    padding: 0.25rem 0.7rem;
+  }
 }
 
 .hero-content {
@@ -356,22 +578,25 @@ button, input, select, textarea {
   line-height: 1.15;
   color: #FFFFFF;
   margin-bottom: 1.25rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.95);
 }
 
 .hero-title .highlight-gold {
   background: var(--gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(212, 175, 55, 0.35));
 }
 
 .hero-subtitle {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: #CBD5E1;
+  color: #E2E8F0;
   line-height: 1.65;
   margin-bottom: 2rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
 }
 
 .hero-cta-group {

@@ -97,9 +97,39 @@
 
   <!-- Hero Section -->
   <section class="hero-section" id="home">
+    <!-- Cinematic Canvas: Hard-edged spotlight cone & thousands of twinkling dust motes -->
+    <canvas id="heroCinematicCanvas" class="hero-cinematic-canvas"></canvas>
     <div class="hero-overlay-grid"></div>
+
+    <!-- Cinematic Lighting Controls -->
+    <div class="hero-cinematic-controls">
+      <button class="cinematic-ctrl-btn active" id="btnSpotlightTrack" title="Toggle Spotlight Following Cursor">
+        <span class="ctrl-icon">🔦</span> <span class="ctrl-text">Spotlight: Tracking</span>
+      </button>
+      <button class="cinematic-ctrl-btn" id="btnGleamTrigger" title="Trigger Specular Gold Gleam">
+        <span class="ctrl-icon">✨</span> <span class="ctrl-text">Shine Emblem</span>
+      </button>
+    </div>
+
     <div class="container">
       <div class="hero-content">
+        <!-- Luxury Brand Emblem Showcase bathed in the Spotlight Cone -->
+        <div class="hero-luxury-emblem-showcase" id="heroEmblemShowcase">
+          <div class="emblem-badge-wrapper" id="emblemBadgeWrapper" title="Ophei Ansah Auto Imports - Premium Japanese & Korean Fleet">
+            <div class="emblem-halo"></div>
+            <div class="emblem-badge-card">
+              <img src="logo.png" alt="Ophei Ansah Auto Imports Official Crest" class="emblem-logo-img" id="emblemLogoImg">
+              <div class="emblem-specular-sweep"></div>
+            </div>
+            <div class="emblem-shadow"></div>
+          </div>
+          <div class="emblem-stage-info">
+            <span class="stage-tag">OFFICIAL LUXURY SHOWCASE</span>
+            <span class="stage-divider">•</span>
+            <span class="stage-rating">★ DIRECT JAPAN & KOREA IMPORTS</span>
+          </div>
+        </div>
+
         <div class="hero-badge-pill">
           <span>🇬🇭</span> Ghana's Trusted Direct Japan & Korea Auto Specialist
         </div>
@@ -860,5 +890,7 @@
 
   <!-- JavaScript Engine -->
   <script src="assets/js/main.js"></script>
+  <!-- Hero Cinematic Spotlight & Volumetric Dust Motes Engine -->
+  <script src="assets/js/hero-cinematic-spotlight.js"></script>
 </body>
 </html>
