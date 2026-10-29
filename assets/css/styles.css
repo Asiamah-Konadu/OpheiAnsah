@@ -301,15 +301,15 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   HERO SECTION - CINEMATIC SPOTLIGHT & DUST MOTES
+   HERO SECTION - MINIMALIST SPOTLIGHT & SLOW BALLET OF DUST
    ========================================================================== */
 .hero-section {
   position: relative;
-  background: radial-gradient(circle at 50% 25%, #0B1626 0%, #050B14 55%, #02050A 100%);
+  background: #020408;
   color: #FFFFFF;
-  padding: 3.5rem 0 3.5rem;
+  padding: 4.5rem 0 3.5rem;
   overflow: hidden;
-  min-height: 620px;
+  min-height: 580px;
 }
 
 .hero-cinematic-canvas {
@@ -323,210 +323,82 @@ button, input, select, textarea {
 }
 
 .hero-overlay-grid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
-    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 36px 36px;
-  background-position: 0 0, 18px 18px;
-  opacity: 0.4;
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
-/* Luxury Brand Emblem Showcase Centerpiece */
-.hero-luxury-emblem-showcase {
+/* 2-Column Hero Composition */
+.hero-grid-layout {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.75rem;
-  z-index: 3;
-}
-
-.emblem-badge-wrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transition: transform 0.15s ease-out;
-  cursor: pointer;
-  will-change: transform;
-}
-
-.emblem-halo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 320px;
-  height: 220px;
-  background: radial-gradient(ellipse, rgba(255, 235, 170, 0.45) 0%, rgba(212, 175, 55, 0.18) 45%, transparent 70%);
-  border-radius: 50%;
-  filter: blur(14px);
-  pointer-events: none;
-  animation: emblemPulse 3.5s ease-in-out infinite alternate;
-}
-
-@keyframes emblemPulse {
-  0% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.7; }
-  100% { transform: translate(-50%, -50%) scale(1.12); opacity: 1; }
-}
-
-.emblem-badge-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 220px;
-  max-width: 270px;
-  height: 108px;
-  background: radial-gradient(ellipse at 50% 25%, #FFFFFF 0%, #FAF8F2 60%, #F4EBDA 100%);
-  border: 2px solid #D4AF37;
-  outline: 1.5px solid rgba(255, 235, 170, 0.65);
-  outline-offset: -5px;
-  border-radius: 22px;
-  padding: 0.85rem 1.8rem;
-  box-shadow: 
-    0 0 35px rgba(255, 240, 180, 0.9),
-    0 0 85px rgba(212, 175, 55, 0.5),
-    0 18px 40px rgba(0, 0, 0, 0.75),
-    inset 0 1px 3px rgba(255, 255, 255, 1);
-  overflow: hidden;
-  backdrop-filter: blur(12px);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.emblem-badge-card:hover {
-  border-color: #F7E7A9;
-  box-shadow: 
-    0 0 50px rgba(255, 245, 200, 1),
-    0 0 110px rgba(212, 175, 55, 0.7),
-    0 24px 50px rgba(0, 0, 0, 0.85);
-}
-
-.emblem-logo-img {
-  width: auto;
-  height: 100%;
-  max-height: 82px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.28));
-  transition: transform 0.3s ease;
-  pointer-events: none;
-}
-
-.emblem-specular-sweep {
-  position: absolute;
-  top: -50%;
-  left: -120%;
-  width: 60%;
-  height: 200%;
-  background: linear-gradient(
-    90deg, 
-    transparent 0%, 
-    rgba(255, 255, 255, 0.15) 25%, 
-    rgba(255, 255, 255, 0.85) 50%, 
-    rgba(255, 235, 180, 0.4) 75%, 
-    transparent 100%
-  );
-  transform: rotate(35deg);
-  pointer-events: none;
-  opacity: 0;
-}
-
-.animate-gleam .emblem-specular-sweep {
-  animation: specularGleam 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes specularGleam {
-  0% { left: -120%; opacity: 0; }
-  15% { opacity: 0.9; }
-  85% { opacity: 0.9; }
-  100% { left: 180%; opacity: 0; }
-}
-
-.emblem-shadow {
-  position: absolute;
-  bottom: -20px;
-  width: 160px;
-  height: 18px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, transparent 75%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-/* Floating Cinematic Interactive Controls */
-.hero-cinematic-controls {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  z-index: 5;
-}
-
-.cinematic-ctrl-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: rgba(10, 20, 36, 0.75);
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  color: #E2E8F0;
-  padding: 0.4rem 0.85rem;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  backdrop-filter: blur(12px);
-  transition: all 0.25s ease;
-}
-
-.cinematic-ctrl-btn:hover {
-  background: rgba(212, 175, 55, 0.2);
-  border-color: rgba(212, 175, 55, 0.7);
-  color: #FFFFFF;
-  transform: translateY(-1px);
-}
-
-.cinematic-ctrl-btn.active {
-  background: rgba(212, 175, 55, 0.22);
-  border-color: var(--gold-light);
-  color: var(--gold-light);
-}
-
-@media (max-width: 768px) {
-  .hero-cinematic-controls {
-    top: 0.75rem;
-    right: 0.75rem;
-  }
-  .cinematic-ctrl-btn .ctrl-text {
-    display: none;
-  }
-  .emblem-badge-card {
-    width: 115px;
-    height: 115px;
-    padding: 1rem;
-  }
-  .emblem-stage-info {
-    font-size: 0.68rem;
-    padding: 0.25rem 0.7rem;
-  }
+  gap: 2.5rem;
+  min-height: 480px;
 }
 
 .hero-content {
+  text-align: left;
+  max-width: 680px;
+}
+
+.hero-spotlight-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 920px;
-  margin: 0 auto;
+  min-height: 380px;
+}
+
+.spotlight-emblem-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: emblemCalmFloat 7s ease-in-out infinite;
+}
+
+@keyframes emblemCalmFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.spotlight-emblem-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1) drop-shadow(0 0 25px rgba(245, 225, 180, 0.45)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.85));
+  transition: transform 0.5s ease;
+}
+
+.spotlight-pedestal-glow {
+  position: absolute;
+  bottom: -35px;
+  width: 220px;
+  height: 30px;
+  background: radial-gradient(ellipse at center, rgba(235, 215, 175, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  .hero-grid-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero-spotlight-showcase {
+    min-height: 200px;
+    order: -1;
+  }
+  .spotlight-emblem-img {
+    max-width: 190px;
+  }
 }
 
 .hero-badge-pill {

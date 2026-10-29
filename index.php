@@ -97,94 +97,80 @@
 
   <!-- Hero Section -->
   <section class="hero-section" id="home">
-    <!-- Cinematic Canvas: Hard-edged spotlight cone & thousands of twinkling dust motes -->
     <canvas id="heroCinematicCanvas" class="hero-cinematic-canvas"></canvas>
-    <div class="hero-overlay-grid"></div>
-
-    <!-- Cinematic Lighting Controls -->
-    <div class="hero-cinematic-controls">
-      <button class="cinematic-ctrl-btn active" id="btnSpotlightTrack" title="Toggle Spotlight Following Cursor">
-        <span class="ctrl-icon">🔦</span> <span class="ctrl-text">Spotlight: Tracking</span>
-      </button>
-      <button class="cinematic-ctrl-btn" id="btnGleamTrigger" title="Trigger Specular Gold Gleam">
-        <span class="ctrl-icon">✨</span> <span class="ctrl-text">Shine Emblem</span>
-      </button>
-    </div>
 
     <div class="container">
-      <div class="hero-content">
-        <!-- Luxury Brand Emblem Showcase bathed in the Spotlight Cone -->
-        <div class="hero-luxury-emblem-showcase" id="heroEmblemShowcase">
-          <div class="emblem-badge-wrapper" id="emblemBadgeWrapper" title="Ophei Ansah Auto Imports">
-            <div class="emblem-halo"></div>
-            <div class="emblem-badge-card">
-              <img src="logo.png" alt="Ophei Ansah Auto Imports Official Crest" class="emblem-logo-img" id="emblemLogoImg">
-              <div class="emblem-specular-sweep"></div>
-            </div>
-            <div class="emblem-shadow"></div>
+      <div class="hero-grid-layout">
+        <!-- Left Column: Compelling Headline & CTAs -->
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span>🇬🇭</span> Ghana's Trusted Direct Japan & Korea Auto Specialist
           </div>
-          
+          <h1 class="hero-title">
+            Buy, Ship, Rent & Source Spare Parts — <span class="highlight-gold">Direct from Japan</span>
+          </h1>
+          <p class="hero-subtitle">
+            Reliable vehicles practically driven in Ghana — Toyota Corolla, RAV4, Camry, Yaris, Elantra, Hilux & Prado. 
+            Transparent GRA ICUMS customs duty estimation, fast RoRo & container shipping to Tema Port, affordable car rentals, and tested genuine Japanese spare parts.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#duty-estimator" class="btn-primary-gold">
+              <span>🧮</span> Calculate Vehicle Duty
+            </a>
+            <a href="#buy-cars" class="btn-outline-white">
+              <span>🚗</span> View Ghana Fleet
+            </a>
+            <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20would%20like%20to%20speak%20with%20an%20import%20agent%20about%20importing%20a%20car." target="_blank" class="btn-whatsapp-sm" style="padding: 0.85rem 1.6rem; font-size: 1rem;">
+              <span>💬</span> WhatsApp: 0245663155
+            </a>
+          </div>
+
+          <!-- Quick Jump Strip -->
+          <div class="quick-action-strip">
+            <a href="buy-cars.php" class="quick-card-btn">
+              <div class="quick-icon-wrap">🚗</div>
+              <div>
+                <h4>Buy a Car</h4>
+                <span>Japan Auction Sourcing</span>
+              </div>
+            </a>
+            <a href="shipping.php" class="quick-card-btn">
+              <div class="quick-icon-wrap">🚢</div>
+              <div>
+                <h4>Shipping</h4>
+                <span>Live Port Tracking</span>
+              </div>
+            </a>
+            <a href="duty-estimator.php" class="quick-card-btn">
+              <div class="quick-icon-wrap">🧮</div>
+              <div>
+                <h4>Duty Estimator</h4>
+                <span>GRA / ICUMS Formula</span>
+              </div>
+            </a>
+            <a href="rental.php" class="quick-card-btn">
+              <div class="quick-icon-wrap">🚙</div>
+              <div>
+                <h4>Car & Van Rental</h4>
+                <span>From GH₵ 350 / Day</span>
+              </div>
+            </a>
+            <a href="spare-parts.php" class="quick-card-btn">
+              <div class="quick-icon-wrap">⚙️</div>
+              <div>
+                <h4>Spare Parts</h4>
+                <span>Engines, Gearboxes & Shocks</span>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="hero-badge-pill">
-          <span>🇬🇭</span> Ghana's Trusted Direct Japan & Korea Auto Specialist
-        </div>
-        <h1 class="hero-title">
-          Buy, Ship, Rent & Source Spare Parts — <span class="highlight-gold">Direct from Japan</span>
-        </h1>
-        <p class="hero-subtitle">
-          Reliable vehicles practically driven in Ghana — Toyota Corolla, RAV4, Camry, Yaris, Elantra, Hilux & Prado. 
-          Transparent GRA ICUMS customs duty estimation, fast RoRo & container shipping to Tema Port, affordable car rentals, and tested genuine Japanese spare parts.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#duty-estimator" class="btn-primary-gold">
-            <span>🧮</span> Calculate Vehicle Duty
-          </a>
-          <a href="#buy-cars" class="btn-outline-white">
-            <span>🚗</span> View Ghana Fleet
-          </a>
-          <a href="https://wa.me/233245663155?text=Hello%20Ophei%20Ansah%20Auto%20Imports!%20I%20would%20like%20to%20speak%20with%20an%20import%20agent%20about%20importing%20a%20car." target="_blank" class="btn-whatsapp-sm" style="padding: 0.85rem 1.6rem; font-size: 1rem;">
-            <span>💬</span> WhatsApp: 0245663155
-          </a>
-        </div>
-
-        <!-- Quick Jump Strip -->
-        <div class="quick-action-strip">
-          <a href="buy-cars.php" class="quick-card-btn">
-            <div class="quick-icon-wrap">🚗</div>
-            <div>
-              <h4>Buy a Car</h4>
-              <span>Japan Auction Sourcing</span>
-            </div>
-          </a>
-          <a href="shipping.php" class="quick-card-btn">
-            <div class="quick-icon-wrap">🚢</div>
-            <div>
-              <h4>Shipping</h4>
-              <span>Live Port Tracking</span>
-            </div>
-          </a>
-          <a href="duty-estimator.php" class="quick-card-btn">
-            <div class="quick-icon-wrap">🧮</div>
-            <div>
-              <h4>Duty Estimator</h4>
-              <span>GRA / ICUMS Formula</span>
-            </div>
-          </a>
-          <a href="rental.php" class="quick-card-btn">
-            <div class="quick-icon-wrap">🚙</div>
-            <div>
-              <h4>Car & Van Rental</h4>
-              <span>From GH₵ 350 / Day</span>
-            </div>
-          </a>
-          <a href="spare-parts.php" class="quick-card-btn">
-            <div class="quick-icon-wrap">⚙️</div>
-            <div>
-              <h4>Spare Parts</h4>
-              <span>Engines, Gearboxes & Shocks</span>
-            </div>
-          </a>
+        <!-- Right Column: Minimalist Luxury Brand Showcase bathed in the Single Shaft of Light -->
+        <div class="hero-spotlight-showcase" id="heroEmblemShowcase">
+          <div class="spotlight-emblem-wrap">
+            <img src="logo.png" alt="Ophei Ansah Auto Imports" class="spotlight-emblem-img">
+            <div class="spotlight-pedestal-glow"></div>
+          </div>
         </div>
       </div>
     </div>
