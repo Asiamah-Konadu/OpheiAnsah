@@ -115,7 +115,7 @@
       <div class="hero-content">
         <!-- Luxury Brand Emblem Showcase bathed in the Spotlight Cone -->
         <div class="hero-luxury-emblem-showcase" id="heroEmblemShowcase">
-          <div class="emblem-badge-wrapper" id="emblemBadgeWrapper" title="Ophei Ansah Auto Imports - Premium Japanese & Korean Fleet">
+          <div class="emblem-badge-wrapper" id="emblemBadgeWrapper" title="Ophei Ansah Auto Imports">
             <div class="emblem-halo"></div>
             <div class="emblem-badge-card">
               <img src="logo.png" alt="Ophei Ansah Auto Imports Official Crest" class="emblem-logo-img" id="emblemLogoImg">
@@ -123,11 +123,7 @@
             </div>
             <div class="emblem-shadow"></div>
           </div>
-          <div class="emblem-stage-info">
-            <span class="stage-tag">OFFICIAL LUXURY SHOWCASE</span>
-            <span class="stage-divider">•</span>
-            <span class="stage-rating">★ DIRECT JAPAN & KOREA IMPORTS</span>
-          </div>
+          
         </div>
 
         <div class="hero-badge-pill">
